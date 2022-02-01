@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--pale-blue);
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-size: cover;
+  height: calc(100vh - 200px);
+  width: 100%;
+  position: absolute;
+}
+
+@media (max-width: 376px) {
+  main {
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-size: cover;
+  }
+
+  main .container {
+    width: 90%;
+    margin: 1vh auto;
+  }
+  main .container .main {
+    padding: 5px;
+    margin: 0 10px;
+  }
+}
+
+.container {
+  width: min-content;
+  background: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 10vh auto;
+}
+
+.hero-image {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 0 10px;
+  padding: 0;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.main {
+  padding: 10px 50px;
+}
+
+.header {
+  text-align: center;
+  padding: 10px;
+}
+
+h1 {
+  padding: 10px;
+}
+
+.header p {
+  padding: 10px;
+  color: var(--desaturated-blue);
+}
+
+.payment {
+  background: var(--very-pale-blue);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.payment a {
+  color: var(--bright-blue);
+  font-weight: 700;
+}
+
+.payment a:hover {
+  color: var(--desaturated-blue);
+}
+
+.img-annual {
+  display: flex;
+}
+
+.charge {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.charge .plan {
+  font-weight: 700;
+}
+
+.charge .money {
+  color: var(--desaturated-blue);
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+}
+
+.btns .first-btn {
+  color: #fff;
+  background: var(--bright-blue);
+  height: 3em;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  box-shadow: 2px 10px 34px -15px rgba(0, 0, 0, 0.75);
+  margin: 10px 0 20px;
+  cursor: pointer;
+}
+
+.btns .first-btn:hover {
+  background: var(--desaturated-blue);
+}
+
+.btns .second-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--desaturated-blue);
+  font-weight: 700;
+  margin: 0 0 20px;
+  padding: 0 0 20px;
+}
+
+.btns .second-btn:hover {
+  color: var(--dark-blue);
+}
