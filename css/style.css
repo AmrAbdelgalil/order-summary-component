@@ -72,6 +72,7 @@ main {
 
 h1 {
   padding: 10px;
+  color: var(--dark-blue);
 }
 
 .header p {
@@ -110,6 +111,7 @@ h1 {
 
 .charge .plan {
   font-weight: 700;
+  color: var(--dark-blue);
 }
 
 .charge .money {
