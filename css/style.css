@@ -35,11 +35,14 @@ main {
 
   main .container {
     width: 90%;
-    margin: 1vh auto;
+    margin: 5vh auto;
   }
   main .container .main {
     padding: 5px;
     margin: 0 10px;
+  }
+  .hero-image img {
+    width: 100%;
   }
 }
 
